@@ -6,6 +6,9 @@ import path from 'path';
 
 const app = express();
 app.use(cors())
+
+
+
 app.use('/images',express.static(path.join('uploads/images')));
 app.use('/api/image',imageupload)
 
